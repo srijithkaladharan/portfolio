@@ -1,0 +1,8 @@
+<div class="carousel-container">
+    <carousel [noPause]="false">
+        <slide *ngFor="let image of images">
+            <img [src]="image.path" [alt]="image.alt" style="display: block; width: 100%;">
+            <p class="count-badge">{{image.id}}</p>
+        </slide>
+    </carousel>
+</div>

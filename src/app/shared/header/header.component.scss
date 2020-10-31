@@ -1,0 +1,61 @@
+$primary: #714add;
+$secondary: #FFBF00;
+
+
+#title {
+    margin-top: 2rem;
+    color: black;
+    font-weight: 600;
+    font-style: 'Open Sans', sans-serif !important;
+    text-align: left;
+}
+
+
+
+#contacts-container{
+    float: right;
+
+    img {
+        height: 3rem;
+        width: 3rem;
+    }
+    
+    img#call-btn{
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+.contacts-container img:hover {
+    border-bottom: 2px solid $primary;
+}
+
+.align-center {
+    display: block;
+    margin: 0 auto;
+}
+
+.image-box, 
+.image-box img {
+    height: 12rem;
+    width: 12rem;
+    background-color: gray;
+    border-radius: 3rem;
+    float: left;
+}
+
+@media (max-width: 767px) {
+    #title {
+        text-align: center;
+    }
+    #sub-title {
+        text-align: center;
+    }
+}   
+
+@media (max-width: 767px) and (min-width: 444px) {
+    #contacts-container .row {
+        margin-left: 2rem;
+    }
+}
+

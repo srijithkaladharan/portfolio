@@ -1,1 +1,116 @@
 /* You can add global styles to this file, and also import other style files */
+
+$primary: #714add;
+$secondary: #FFBF00;
+
+* {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+  html {
+    padding: 0;
+    height: 100%;
+  }
+  
+  body{
+    margin-top: 2rem;
+    height: 100%;
+  }
+
+  header {
+    margin-bottom: 2em;
+  }
+  
+  #centered {
+    display: block;
+    margin: 0 auto;
+  }
+
+  #section-title {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  hr {
+    margin-top: 2rem;
+    width: 30%;
+    margin-bottom: 3rem;
+  }
+
+  hr#odd {
+    border-top: 2px solid $secondary;
+  }
+
+  hr#even{
+    border-top: 2px solid $primary;
+  }
+
+  #employers img{
+    height: 10rem;
+    width: 10rem;
+    display: block;
+    margin: 0 auto;
+  }
+
+  #employers h5{
+    margin-top: 1rem;
+    text-align: center;
+  }
+
+  a span {
+    display: none;
+    position: absolute; 
+    color: $primary; 
+    background: $secondary; 
+    padding: 5px;
+  }
+  a {
+      position: relative;
+  }
+
+  a:hover span{
+      border-radius: 1rem;
+      width: 8rem;
+      display: block; 
+      text-align: center;
+      z-index: 10;
+  }
+
+  #exp-span  {
+      margin-left: 20%;
+      margin-top: 1rem;
+  }
+
+  #contact-span {
+    margin-left: -80%;
+  }
+
+  @media (max-width: 577px){
+    a:hover span{
+      display: none;
+    }
+  }
+
+  // #align-top{
+  //   margin-top: -5%;
+  // }
+
+  #footer {
+    display: block;
+    margin: 0 auto;
+
+    img {
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.5rem;
+      margin-top: 0.2rem;
+    }
+  }
+
+  .col-bottom {
+    margin-bottom : 1rem;
+  }

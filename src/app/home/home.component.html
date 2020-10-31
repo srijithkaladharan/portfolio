@@ -1,0 +1,128 @@
+<header>
+
+    <name-header></name-header>
+
+    <hr id="odd">
+</header>
+
+<section id="work-tech-stack">
+    <div class="container">
+        <section-title [titleText]="'Experience in Technologies'">
+        </section-title>
+        <div class="row">
+            <div class="col-4 col-md-2 col-sm-4 text-center col-bottom">
+                <a>
+                    <img class="tech-icon-1" src="assets/icons/ionic.png">
+                    <span id="exp-span">7 months</span>
+                </a>
+            </div>
+            <div class="col-4 col-md-2 col-sm-4 text-center col-bottom">
+                <a>
+                    <img class="tech-icon-2" src="assets/icons/angular.png">
+                    <span id="exp-span">2+ years</span>
+                </a>
+            </div>
+            <!-- <div class="col-2 col-md-2 col-sm-4">
+                <img id="ang-icon" src="assets/icons/html.png">
+            </div>
+            <div class="col-2 col-md-2 col-sm-4">
+                <img id="ang-icon" src="assets/icons/css.png">
+            </div> -->
+            <div class="col-4 col-md-2 col-sm-4 text-center col-bottom">
+                <a>
+                    <img class="tech-icon-2" src="assets/icons/python.png">
+                    <span id="exp-span">10 months</span>
+                </a>
+            </div>
+
+            <div class="col col-4 col-md-2 col-sm-4 text-center col-bottom">
+                <a>
+                    <img class="tech-icon-2" src="assets/icons/java.png">
+                    <span id="exp-span">10 months</span>
+                </a>
+            </div>
+
+            <div class="col col-4 col-md-2 col-sm-4 text-center col-bottom">
+                <a>
+                    <img class="tech-icon-3" src="assets/icons/oraclesql.png">
+                    <span id="exp-span align-top">10 months</span>
+                </a>
+            </div>
+
+            <div class="col-4 col-md-2 col-sm-4 text-center col-bottom">
+                <a>
+                    <img class="tech-icon-3" src="assets/icons/linux.jpg">
+                    <span id="exp-span align-top">10 months</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <hr id="even">
+</section>
+
+<section id="employers">
+    <div class="container">
+        <section-title [titleText]="'Worked @'"></section-title>
+
+        <div class="row">
+            <div class="col-md-6" *ngFor="let employer of employers">
+                <div class="card shadow p-3 mb-5 bg-white rounded" (click)="goToLink(employer.website)">
+                    <img class="card-img-top" [src]="employer.imgPath" [alt]="employer.name">
+                    <div class="card-body">
+                        <h5 class="card-title">{{employer.duration}}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr id="odd">
+</section>
+
+<section id="learnt-tech-stack">
+    <div class="container">
+        <section-title [titleText]="'Upskilled Web Technologies'"></section-title>
+
+        <div class="row">
+            <div class="col-6 col-md-4 col-sm-4 text-center">
+                <img class="tech-icon-4" src="assets/icons/node.png" alt="node">
+            </div>
+            <div class="col-6 col-md-4 col-sm-4 text-center">
+                <img class="tech-icon-4" src="assets/icons/mongodb.png" alt="mongo">
+            </div>
+            <div class="col-12 col-md-4 col-sm-4 text-center">
+                <img class="tech-icon-4" src="assets/icons/springboot.png" alt="springboot">
+            </div>
+        </div>
+    </div>
+
+    <hr id="even">
+</section>
+
+<section id="certifications">
+    <div class="container">
+        <section-title [titleText]="'Certifications'"></section-title>
+
+        <sliding-images [images]="certifications"></sliding-images>
+    </div>
+
+    <hr id="odd">
+</section>
+
+<section id="awards">
+    <div class="container">
+        <section-title [titleText]="'Awards'"></section-title>
+
+        <sliding-images [images]="awards"></sliding-images>
+    </div>
+
+    <hr id="even">
+</section>
+
+<footer id="footer">
+    <div class="d-flex flex-row justify-content-center">
+        <img src="assets/icons/copyright.png" alt="cp-icon">
+        <h5>Designed & Developed by Srijith Kaladharan</h5>
+    </div>
+</footer>

@@ -1,0 +1,26 @@
+$secondary: #FFBF00;
+
+.carousel-container {
+    height: 70%;
+    width: 70%;
+    display: block;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.carousel-container img{
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.count-badge {
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    color: $secondary;
+    font-size: 1rem;
+    font-style: bold;
+}
