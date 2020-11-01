@@ -11,6 +11,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ModalDialogComponent } from './modal-dialog/modal-dialog.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { ClipboardModule } from '@angular/cdk/clipboard';
 import { FormsModule } from '@angular/forms';
 
@@ -31,6 +32,7 @@ import { FormsModule } from '@angular/forms';
     MatProgressBarModule,
     MatBadgeModule,
     MatDialogModule,
+    MatProgressSpinnerModule,
     ClipboardModule,
     FormsModule
   ],

@@ -11,6 +11,8 @@ export class HeaderComponent implements OnInit {
   email: string = "srijithkaladharan@outlook.com";
   phone: string = "+917200630012";
 
+  imgLoading: boolean = true;
+
   constructor(private toastr: ToastrService) { }
 
   ngOnInit(): void {
@@ -44,6 +46,10 @@ export class HeaderComponent implements OnInit {
 
   copyToClipboard(msg: string) {
     this.toastr.success(msg);
+  }
+
+  imgOnLoad() {
+    this.imgLoading = false;
   }
 
 }

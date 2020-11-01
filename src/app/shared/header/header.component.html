@@ -1,7 +1,9 @@
 <div class="container">
     <div class="row d-flex justify-content-center">
         <div class="image-box">
-            <img class="card-img-top" src="assets/images/profile/srijith.jpg" alt="dp icon">
+            <mat-spinner id="loading-spinner" *ngIf="imgLoading"></mat-spinner>
+            <img [hidden]="imgLoading" class="card-img-top" src="assets/images/profile/srijith.jpg" alt="dp icon"
+                (load)="imgOnLoad()">
         </div>
 
         <ul>

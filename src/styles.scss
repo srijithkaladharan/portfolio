@@ -7,17 +7,16 @@ $secondary: #FFBF00;
   font-family: 'Open Sans', sans-serif !important;
 }
 
-  html {
-    padding: 0;
-    height: 100%;
-  }
-  
+  html,
   body{
-    margin-top: 2rem;
+    padding: 0;
+    margin: 0;
     height: 100%;
+    width: 99%;
   }
 
   header {
+    margin-top: 2rem;
     margin-bottom: 2em;
   }
   
